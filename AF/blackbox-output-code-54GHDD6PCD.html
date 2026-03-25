@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FREE BET KING - Legal Free Betting</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h2>🎮 FREE BET KING</h2>
+            </div>
+            <div class="user-info">
+                <span id="username">Guest</span>
+                <span id="points">0 PTS</span>
+                <button onclick="claimDailyBonus()" class="daily-btn">🎁 Daily Bonus</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Dashboard -->
+    <main class="dashboard">
+        <!-- Welcome Section -->
+        <section class="welcome">
+            <h1>🚀 Welcome to FREE BET KING!</h1>
+            <p>Har visit pe <strong>50 FREE POINTS</strong> milega! 💰</p>
+            <button onclick="loginUser()" class="login-btn">👤 Login / Register</button>
+        </section>
+
+        <!-- Games Section -->
+        <section class="games-section">
+            <h2>🎯 Available Games</h2>
+            <div class="games-grid" id="gamesGrid">
+                <!-- Games load dynamically -->
+            </div>
+        </section>
+
+        <!-- Leaderboard -->
+        <section class="leaderboard">
+            <h2>🏆 Top Players</h2>
+            <div id="leaderboardList"></div>
+        </section>
+    </main>
+
+    <!-- Game Modal -->
+    <div id="gameModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeGameModal()">&times;</span>
+            <div id="gameContent"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
